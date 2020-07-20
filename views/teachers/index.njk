@@ -8,7 +8,7 @@
         <thead>
             <tr>
                 <th>Professor</th>
-                <th>Aulas</th>
+                <th>Acompanhamento</th>
                 <th>Ação</th>
             </tr>    
         </thead>
@@ -19,7 +19,7 @@
                     <span style="background-image: url({{teacher.avatar_url}})"></span>
                     {{teacher.name}}
                 </td>
-                <td>{{teacher.services}}</td>
+                <td>{{teacher.skills}}</td>
                 <td><a href="/teachers/{{ teacher.id }}">Acessar</a></td>
             </tr>
             {% endfor %}    
