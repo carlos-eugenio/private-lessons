@@ -17,13 +17,10 @@
       "id": 2,
       "avatar_url": "https://images.unsplash.com/flagged/photo-1559475555-b26777ed3ab4?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
       "name": "Cristiano silva",
-      "birth": 748656000000,
-      "education": "doutorado",
+      "birth": 681350400000,
+      "education": "superior",
       "services": "Ead",
-      "skills": [
-        "Português",
-        " Espanhol"
-      ],
+      "skills": "Português, Japones",
       "created_at": 1592786261290
     },
     {
