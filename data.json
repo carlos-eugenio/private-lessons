@@ -5,20 +5,50 @@
       "avatar_url": "https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
       "name": "Paulo farias",
       "birth": 748656000000,
-      "education": "Mestrado",
+      "education": "mestrado",
       "services": "Presencial",
-      "skills": "Português e Inglês",
+      "skills": [
+        "Português",
+        " Espanhol"
+      ],
       "created_at": 1592786261290
     },
     {
       "id": 2,
       "avatar_url": "https://images.unsplash.com/flagged/photo-1559475555-b26777ed3ab4?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
       "name": "Cristiano silva",
-      "birth": 748656000000,
-      "education": "Doutorado",
+      "birth": 681350400000,
+      "education": "superior",
       "services": "Ead",
-      "skills": "Português e Espanhol",
+      "skills": "Português, Japones",
       "created_at": 1592786261290
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80",
+      "name": "Paula junior",
+      "birth": 711158400000,
+      "education": "medio",
+      "services": "Ead",
+      "skills": [
+        "Russo",
+        " Italiano",
+        " Português"
+      ],
+      "created_at": 1595205364145
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80",
+      "name": "Paola silva",
+      "birth": 774316800000,
+      "education": "superior",
+      "services": "Presencial",
+      "skills": [
+        "Russo",
+        " Italiano"
+      ],
+      "created_at": 1595206148423
     }
   ]
 }

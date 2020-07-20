@@ -27,5 +27,22 @@ module.exports = {
             birthDay: `${day}/${month}`,
             dateBr: `${day}/${month}/${year}`
         }
+    },
+    graduation: function(education){
+        switch (education) {
+            case "medio":
+                education = "Ensino médio completo"
+            break;
+            case "superior":
+                education = "Ensino superior completo"
+            break;
+            case "mestrado":
+                education = "Mestrado"
+            break;
+            case "doutorado":
+                education = "Doutorado"
+            break;
+        }
+        return education;
     }
 }

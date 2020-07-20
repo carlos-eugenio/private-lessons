@@ -21,9 +21,7 @@
         <div class="item">
             <div>Tipo de aula</div>
             <div>
-                {% for service in teacher.services %}
-                <span>{{ service }}</span>
-                {% endfor %}
+                <span>{{ teacher.services }}</span>
             </div>
         </div>
         <div class="item">
@@ -34,6 +32,7 @@
             <div>Desde</div>
             <div>{{ teacher.created_at }}</div>
         </div>
+        <a href="/teachers/{{ teacher.id }}/edit" class="button">Editar</a>
     </section> 
 </div>
 

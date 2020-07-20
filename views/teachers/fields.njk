@@ -13,8 +13,8 @@
 <div class="item">
     <div>Formação</div>
     <select name="education">
-        <option value="ensino-medio" {% if teacher.education == 'ensino-medio' %} selected {% endif %} >Ensino médio completo</option> 
-        <option value="ensino-superior" {% if teacher.education == 'ensino-superior' %} selected {% endif %} >Ensino superior completo</option>
+        <option value="medio" {% if teacher.education == 'medio' %} selected {% endif %} >Ensino médio completo</option> 
+        <option value="superior" {% if teacher.education == 'superior' %} selected {% endif %} >Ensino superior completo</option>
         <option value="mestrado" {% if teacher.education == 'mestrado' %} selected {% endif %} >Mestrado</option>
         <option value="doutorado" {% if teacher.education == 'doutorado' %} selected {% endif %} >Doutorado</option>
     </select>
