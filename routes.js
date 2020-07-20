@@ -3,7 +3,7 @@ const express = require('express')
 const routes = express.Router()
 
 const data = require('./data.json')
-const { age, date } = require('./utils')
+const { age, date, graduation } = require('./utils')
 
 routes.get('/', function(req, res) {
     return res.redirect('/teachers')
@@ -28,7 +28,7 @@ routes.get('/teachers/:id', function(req, res) {
     const teacher = {
         ...foundteacher,
         age: age(foundteacher.birth),
-        services: foundteacher.services.split(","),
+        education: graduation(foundteacher.education),    
         created_at: date(foundteacher.birth).dateBr
         // Função intl.datetimeformat não está funcionando
         // Quando chamada pega a data atual e mostra no formato en-US
@@ -52,6 +52,7 @@ routes.post('/teachers', function(req, res) {
     birth = Date.parse(birth)
     const created_at = Date.now()
     const id = Number(data.teachers.length + 1)
+    skills = skills.split(",")
 
     data.teachers.push({
         id,
