@@ -15,22 +15,18 @@
             <div>{{ student.age }}</div>
         </div>
         <div class="item">
-            <div>Formação</div>
-            <div>{{ student.education }}</div>
+            <div>Email</div>
+            <div>{{ student.email }}</div>
         </div>
         <div class="item">
-            <div>Tipo de aula</div>
+            <div>Ano escolar</div>
             <div>
-                <span>{{ student.services }}</span>
+                <span>{{ student.grade }}</span>
             </div>
         </div>
         <div class="item">
-            <div>Acompanhamento</div>
-            <div>{{ student.skills }}</div>
-        </div>
-        <div class="item">
-            <div>Desde</div>
-            <div>{{ student.created_at }}</div>
+            <div>Carga horária semanal</div>
+            <div>{{ student.duration }}</div>
         </div>
         <a href="/students/{{ student.id }}/edit" class="button">Editar</a>
     </section> 

@@ -3,7 +3,7 @@
     <div><input type="url" name="avatar_url" placeholder="http://" value="{{ student.avatar_url }}"></div>
 </div>
 <div class="item">
-    <div>Professor</div>
+    <div>Estudante</div>
     <div><input type="text" name="name" value="{{ student.name }}"></div>
 </div>
 <div class="item">
@@ -11,8 +11,12 @@
     <div><input type="date" name="birth" value="{{ student.birth }}"></div>
 </div>
 <div class="item">
-    <div>Formação</div>
-    <select name="education">
+    <div>Email</div>
+    <div><input type="date" name="email" value="{{ student.email }}"></div>
+</div>
+<div class="item">
+    <div>Ano escolar</div>
+    <select name="grade">
         <option value="medio" {% if student.education == 'medio' %} selected {% endif %} >Ensino médio completo</option> 
         <option value="superior" {% if student.education == 'superior' %} selected {% endif %} >Ensino superior completo</option>
         <option value="mestrado" {% if student.education == 'mestrado' %} selected {% endif %} >Mestrado</option>
@@ -20,27 +24,8 @@
     </select>
 </div>
 <div class="item">
-    <div>Tipo de aula</div>
-    <div>
-        <span>
-            <input type="radio" name="services" value="Presencial" 
-            {% if student.services == 'Presencial' %}
-            checked
-            {% endif %}>
-            Presencial
-        </span>
-        <span>
-            <input type="radio" name="services" value="Ead"
-            {% if student.services == 'Ead' %}
-            checked
-            {% endif %}>
-            EAD
-        </span>
-    </div>
-</div>
-<div class="item">
-    <div>Acompanhamento</div>
-    <div><input type="text" name="skills" placeholder="Separe os serviços prestados por virgula." value="{{ student.skills }}"></div>
+    <div>Carga horária semanal</div>
+    <div><input type="number" name="duration" value="{{ student.duration }}"></div>
 </div>
 
 <button type="submit">Salvar</button>
