@@ -12,15 +12,19 @@
 </div>
 <div class="item">
     <div>Email</div>
-    <div><input type="date" name="email" value="{{ student.email }}"></div>
+    <div><input type="email" name="email" value="{{ student.email }}"></div>
 </div>
 <div class="item">
     <div>Ano escolar</div>
     <select name="grade">
-        <option value="medio" {% if student.education == 'medio' %} selected {% endif %} >Ensino médio completo</option> 
-        <option value="superior" {% if student.education == 'superior' %} selected {% endif %} >Ensino superior completo</option>
-        <option value="mestrado" {% if student.education == 'mestrado' %} selected {% endif %} >Mestrado</option>
-        <option value="doutorado" {% if student.education == 'doutorado' %} selected {% endif %} >Doutorado</option>
+        <option value="5EF" {% if student.grade == '5EF' %} selected {% endif %} >5º ano do ensino fundamental</option> 
+        <option value="6EF" {% if student.grade == '6EF' %} selected {% endif %} >6º ano do ensino fundamental</option> 
+        <option value="7EF" {% if student.grade == '7EF' %} selected {% endif %} >7º ano do ensino fundamental</option> 
+        <option value="8EF" {% if student.grade == '8EF' %} selected {% endif %} >8º ano do ensino fundamental</option> 
+        <option value="9EF" {% if student.grade == '9EF' %} selected {% endif %} >9º ano do ensino fundamental</option> 
+        <option value="1EM" {% if student.grade == '1EM' %} selected {% endif %} >1º ano do ensino médio</option> 
+        <option value="2EM" {% if student.grade == '2EM' %} selected {% endif %} >2º ano do ensino médio</option> 
+        <option value="3EM" {% if student.grade == '3EM' %} selected {% endif %} >3º ano do ensino médio</option> 
     </select>
 </div>
 <div class="item">

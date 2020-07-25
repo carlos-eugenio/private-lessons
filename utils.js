@@ -44,5 +44,34 @@ module.exports = {
             break;
         }
         return education;
+    },
+    school: function(grade){
+        switch (grade) {
+            case "5EF":
+                grade = "5º ano do ensino fundamental"
+            break;
+            case "6EF":
+                grade = "6º ano do ensino fundamental"
+            break;
+            case "7EF":
+                grade = "7º ano do ensino fundamental"
+            break;
+            case "8EF":
+                grade = "8º ano do ensino fundamental"
+            break;
+            case "9EF":
+                grade = "9º ano do ensino fundamental"
+            break;
+            case "1EM":
+                grade = "1º ano do ensino médio"
+            break;
+            case "2EM":
+                grade = "2º ano do ensino médio"
+            break;
+            case "3EM":
+                grade = "3º ano do ensino médio"
+            break;
+        }
+        return grade;
     }
 }

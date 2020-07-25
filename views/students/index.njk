@@ -18,10 +18,10 @@
             <tr>
                 <td>
                     <span style="background-image: url({{student.avatar_url}})"></span>
-                    {{student.name}}
+                    {{ student.name }}
                 </td>
-                <td>{{student.email}}</td>
-                <td>{{student.grade}}</td>
+                <td>{{ student.email }}</td>
+                <td>{{ student.grade }}</td>
                 <td><a href="/students/{{ student.id }}">Acessar</a></td>
             </tr>
             {% endfor %}    
